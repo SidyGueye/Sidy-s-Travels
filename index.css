@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gainsboro;
+
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contenu {
+    text-align: center;
+    position: relative;
+    top: 450px;
+    background-color: gainsboro;
+    padding-top: 30px;
+    width: 100%;
+}
+
+#sidy {
+    float: left;
+    margin-top: 0px;
+    margin-top: -50px;
+    padding-top: 10px;
+}
+
+#banniere {
+
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/Banniere\ accueil.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+header {
+    background-color: whitesmoke;
+    height: 115px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    margin-top: -20px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    padding-top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    margin: 0 10px;
+
+}
+
+nav a:hover {
+    color: orange;
+}
+
+
+h1 {
+    color: whitesmoke;
+    margin-top: 170px;
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+h2 {
+    font-family: poppins;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+
+.container a:hover {
+    color: #000;
+}
+
+.container a:nth-child(2) {
+    filter: hue-rotate(80deg);
+}
+
+.container a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px -8px 0 rgb(255, 255, 255),
+        5px -8px 0 rgb(255, 255, 255);
+    transition: width 0.5s;
+    left: 00.5s;
+    height: 0.5s;
+    box-shadow: 00.5s;
+    transition-delay: 1s, 0.5, 0s, 0s;
+}
+
+.container a:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 rgb(255, 255, 255),
+        5px 0 0 rgb(255, 255, 255);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.container a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    box-shadow: 5px -8px 0 rgb(0, 0, 0),
+        5px -8px 0 rgb(0, 0, 0);
+    transition: width 0.5s;
+    left: 00.5s;
+    height: 0.5s;
+    box-shadow: 00.5s;
+    transition-delay: 1s, 0.5, 0s, 0s;
+}
+
+.container a:hover::after {
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: 5px 0 0 rgb(0, 0, 0),
+        5px 0 0 rgb(0, 0, 0);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+#bannieretaj {
+
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/banniere-tajmahal.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#bannierepétra {
+
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/petra-banniere.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#bannieremachu {
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/machu-picchu-banniere.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#bannierecolisée {
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/Paysage.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#banniererédempteur {
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/depositphotos_30076449-stock-photo-christ-the-redeemer.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#bannieremuraille {
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/great-wall\ banniere.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%
+}
+
+#bannierechichén {
+    height: 350px;
+    padding-top: 0px;
+    margin-top: 80px;
+    background-image: url("Images/mexico-3349002.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    position: fixed;
+    width: 100%
+}
